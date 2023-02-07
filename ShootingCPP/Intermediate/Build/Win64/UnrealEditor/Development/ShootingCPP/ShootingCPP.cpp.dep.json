@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\programming_practice\\unreal5\\shootinggame\\shootinggame\\shootingcpp\\source\\shootingcpp\\shootingcpp.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\programming_practice\\unreal5\\shootinggame\\shootinggame\\shootingcpp\\intermediate\\build\\win64\\shootingcppeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggame\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\development\\shootingcpp\\definitions.shootingcpp.h",
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggame\\shootingcpp\\source\\shootingcpp\\shootingcpp.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ShootingCPP.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ShootingCPP.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ShootingCPPEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Platforms">
+      <UniqueIdentifier>{ED49A36C-4FD5-37E5-A2AC-E11BEF4F21CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\HoloLens">
+      <UniqueIdentifier>{28125F47-4973-377C-9D77-EBC3C72EC856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\HoloLens\Config">
+      <UniqueIdentifier>{D3BF39CB-FA64-39E2-A327-B5021BA69773}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Platforms\HoloLens\Config\HoloLensEngine.ini">
+      <Filter>Platforms\HoloLens\Config</Filter>
+    </None>
+    <Filter Include="Source\ShootingCPP">
+      <UniqueIdentifier>{EFF9D72D-BE3C-35F7-BA3D-81B8F5F760F2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ShootingCPP\ShootingCPP.Build.cs">
+      <Filter>Source\ShootingCPP</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ShootingCPP\ShootingCPP.cpp">
+      <Filter>Source\ShootingCPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingCPP\ShootingCPP.h">
+      <Filter>Source\ShootingCPP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingCPP\ShootingCPPGameModeBase.cpp">
+      <Filter>Source\ShootingCPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingCPP\ShootingCPPGameModeBase.h">
+      <Filter>Source\ShootingCPP</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingCPP\Public">
+      <UniqueIdentifier>{45F02908-259B-3875-A3E4-1093EAD43A57}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\ShootingGameModeBase.h">
+      <Filter>Source\ShootingCPP\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingCPP\Private">
+      <UniqueIdentifier>{D4A39517-22B9-36EF-8599-551F4156CE37}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\ShootingGameModeBase.cpp">
+      <Filter>Source\ShootingCPP\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
