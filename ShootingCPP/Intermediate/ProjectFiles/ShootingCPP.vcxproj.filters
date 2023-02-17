@@ -63,10 +63,16 @@
     <ClInclude Include="..\..\Source\ShootingCPP\Public\ShootingGameModeBase.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\PlayerPawn.h">
+      <Filter>Source\ShootingCPP\Public</Filter>
+    </ClInclude>
     <Filter Include="Source\ShootingCPP\Private">
       <UniqueIdentifier>{D4A39517-22B9-36EF-8599-551F4156CE37}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ShootingCPP\Private\ShootingGameModeBase.cpp">
+      <Filter>Source\ShootingCPP\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\PlayerPawn.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
   </ItemGroup>

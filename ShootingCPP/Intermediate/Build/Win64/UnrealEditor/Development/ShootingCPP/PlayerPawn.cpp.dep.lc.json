@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\source\\shootingcpp\\private\\playerpawn.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\shootingcppeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\development\\shootingcpp\\definitions.shootingcpp.h",
+            "e:\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "e:\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "e:\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "e:\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\source\\shootingcpp\\public\\playerpawn.h",
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingcpp\\uht\\playerpawn.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

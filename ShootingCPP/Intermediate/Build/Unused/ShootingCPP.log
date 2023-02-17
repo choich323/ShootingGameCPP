@@ -1,0 +1,7 @@
+﻿  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" ShootingCPPEditor Win64 Development -Project="E:\Programming_Practice\Unreal5\ShootingGame\ShootingGameCPP\ShootingCPP\ShootingCPP.uproject" -WaitMutex -FromMsBuild
+  Log file: C:\Users\I\AppData\Local\UnrealBuildTool\Log.txt
+  Using 'git status' to determine working set for adaptive non-unity build (E:\Programming_Practice\Unreal5\ShootingGame\ShootingGameCPP).
+  Creating makefile for ShootingCPPEditor (.uproject file is newer)
+E:\Programming_Practice\Unreal5\ShootingGame\ShootingGameCPP\ShootingCPP\Source\ShootingCPP\Private\PlayerPawn.cpp(1): error : Expected PlayerPawn.h to be first header included.
+  Unable to build while Live Coding is active. Exit the editor and game, or press Ctrl+Alt+F11 if iterating on code in the editor or game
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(44,5): error MSB3073: ""E:\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ShootingCPPEditor Win64 Development -Project="E:\Programming_Practice\Unreal5\ShootingGame\ShootingGameCPP\ShootingCPP\ShootingCPP.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 6).

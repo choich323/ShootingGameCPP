@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "ShootingCPP",
-			"Path": "E:\\Programming_Practice\\Unreal5\\ShootingGame\\ShootingGame\\ShootingCPP\\Source\\ShootingCPP.Target.cs",
+			"Path": "E:\\Programming_Practice\\Unreal5\\ShootingGame\\ShootingGameCPP\\ShootingCPP\\Source\\ShootingCPP.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "ShootingCPPEditor",
-			"Path": "E:\\Programming_Practice\\Unreal5\\ShootingGame\\ShootingGame\\ShootingCPP\\Source\\ShootingCPPEditor.Target.cs",
+			"Path": "E:\\Programming_Practice\\Unreal5\\ShootingGame\\ShootingGameCPP\\ShootingCPP\\Source\\ShootingCPPEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
