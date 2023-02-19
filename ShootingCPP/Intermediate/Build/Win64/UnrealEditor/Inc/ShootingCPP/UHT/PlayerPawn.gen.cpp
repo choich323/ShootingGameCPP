@@ -38,6 +38,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_meshComp_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_meshComp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_moveSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_moveSpeed;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -69,9 +73,17 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_meshComp = { "meshComp", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(APlayerPawn, meshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_meshComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_meshComp_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed_MetaData[] = {
+		{ "Category", "PlayerPawn" },
+		{ "ModuleRelativePath", "Public/PlayerPawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed = { "moveSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(APlayerPawn, moveSpeed), METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerPawn_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_boxComp,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_meshComp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_moveSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlayerPawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlayerPawn>::IsAbstract,
@@ -110,9 +122,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_PlayerPawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerPawn, APlayerPawn::StaticClass, TEXT("APlayerPawn"), &Z_Registration_Info_UClass_APlayerPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerPawn), 2807082228U) },
+		{ Z_Construct_UClass_APlayerPawn, APlayerPawn::StaticClass, TEXT("APlayerPawn"), &Z_Registration_Info_UClass_APlayerPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerPawn), 3466338766U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_PlayerPawn_h_360360763(TEXT("/Script/ShootingCPP"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_PlayerPawn_h_3106825815(TEXT("/Script/ShootingCPP"),
 		Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_PlayerPawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_PlayerPawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
