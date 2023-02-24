@@ -33,7 +33,17 @@ public:
 	class UStaticMeshComponent* meshComp;
 
 	UPROPERTY(EditAnywhere)
+	class UArrowComponent* firePosition;
+
+	UPROPERTY(EditAnywhere)
 	float moveSpeed = 500;
+
+	// 총알 블루프린트 파일을 지정하기 위한 변수.
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class ABullet> bulletFactory;
+
+	UPROPERTY(EditAnywhere)
+	class USoundBase* fireSound;
 
 private:
 	float v;
@@ -41,4 +51,6 @@ private:
 
 	void MoveHorizontal(float value);
 	void MoveVertical(float value);
+	
+	void Fire();
 };

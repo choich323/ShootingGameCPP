@@ -3,6 +3,9 @@
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "PlayerPawn.h"
+#include "Components/ArrowComponent.h"
+#include "Bullet.h"
+#include "Kismet/GamePlayStatics.h"
 
 // Sets default values
 APlayerPawn::APlayerPawn()
@@ -18,6 +21,9 @@ APlayerPawn::APlayerPawn()
 
 	FVector boxSize = FVector(50.0f, 50.0f, 50.0f);
 	boxComp->SetBoxExtent(boxSize);
+
+	firePosition = CreateDefaultSubobject<UArrowComponent>(TEXT("Fire Position"));
+	firePosition->SetupAttachment(boxComp);
 }
 
 // Called when the game starts or when spawned
@@ -48,6 +54,8 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	PlayerInputComponent->BindAxis("Horizontal", this, &APlayerPawn::MoveHorizontal); // axis 이름, 연결할 함수가 있는 클래스, 연결할 함수의 주소 값
 	PlayerInputComponent->BindAxis("Vertical", this, &APlayerPawn::MoveVertical);
+	
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerPawn::Fire);
 }
 
 void APlayerPawn::MoveHorizontal(float value)
@@ -58,5 +66,12 @@ void APlayerPawn::MoveHorizontal(float value)
 void APlayerPawn::MoveVertical(float value)
 {
 	v = value;
+}
+
+void APlayerPawn::Fire()
+{
+	ABullet* bullet = GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition->GetComponentLocation(), firePosition->GetComponentRotation());
+
+	UGameplayStatics::PlaySound2D(GetWorld(), fireSound);
 }
 

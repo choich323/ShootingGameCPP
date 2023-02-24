@@ -15,16 +15,16 @@
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
+    <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
-    <None Include="..\..\Config\DefaultGame.ini">
+    <None Include="..\..\Config\DefaultEngine.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
+    <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
     </None>
     <Filter Include="Platforms">
@@ -66,6 +66,9 @@
     <ClInclude Include="..\..\Source\ShootingCPP\Public\PlayerPawn.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\Bullet.h">
+      <Filter>Source\ShootingCPP\Public</Filter>
+    </ClInclude>
     <Filter Include="Source\ShootingCPP\Private">
       <UniqueIdentifier>{D4A39517-22B9-36EF-8599-551F4156CE37}</UniqueIdentifier>
     </Filter>
@@ -73,6 +76,9 @@
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ShootingCPP\Private\PlayerPawn.cpp">
+      <Filter>Source\ShootingCPP\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\Bullet.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
   </ItemGroup>
