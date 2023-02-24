@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingcpp\\uht\\enemyactor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\shootingcppeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\development\\shootingcpp\\definitions.shootingcpp.h",
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\source\\shootingcpp\\public\\enemyactor.h",
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingcpp\\uht\\enemyactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
