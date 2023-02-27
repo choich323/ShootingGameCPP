@@ -18,13 +18,13 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
       <Filter>Config</Filter>
     </None>
     <Filter Include="Platforms">
@@ -63,16 +63,19 @@
     <ClInclude Include="..\..\Source\ShootingCPP\Public\ShootingGameModeBase.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\ShootingCPP\Public\Bullet.h">
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\PlayerPawn.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\ShootingCPP\Public\PlayerPawn.h">
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\EnemyFactory.h">
+      <Filter>Source\ShootingCPP\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\Bullet.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ShootingCPP\Public\EnemyActor.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\ShootingCPP\Public\EnemyFactory.h">
+    <ClInclude Include="..\..\Source\ShootingCPP\Public\KillZone.h">
       <Filter>Source\ShootingCPP\Public</Filter>
     </ClInclude>
     <Filter Include="Source\ShootingCPP\Private">
@@ -81,16 +84,19 @@
     <ClCompile Include="..\..\Source\ShootingCPP\Private\ShootingGameModeBase.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ShootingCPP\Private\Bullet.cpp">
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\EnemyFactory.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ShootingCPP\Private\PlayerPawn.cpp">
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\Bullet.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ShootingCPP\Private\EnemyActor.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ShootingCPP\Private\EnemyFactory.cpp">
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\PlayerPawn.cpp">
+      <Filter>Source\ShootingCPP\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ShootingCPP\Private\KillZone.cpp">
       <Filter>Source\ShootingCPP\Private</Filter>
     </ClCompile>
   </ItemGroup>

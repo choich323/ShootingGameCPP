@@ -6,7 +6,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "EngineUtils.h"
 #include "PlayerPawn.h"
-
+#include "Kismet/GameplayStatics.h"
 // Sets default values
 AEnemyActor::AEnemyActor()
 {
@@ -19,6 +19,8 @@ AEnemyActor::AEnemyActor()
 
 	meshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Static mesh"));
 	meshComp->SetupAttachment(boxComp);
+	// 충돌 프리셋 설정을 Enemy 프리셋으로 설정
+	boxComp->SetCollisionProfileName(TEXT("Enemy"));
 }
 
 // Called when the game starts or when spawned
@@ -41,6 +43,8 @@ void AEnemyActor::BeginPlay()
 	else {
 		dir = GetActorForwardVector(); // ForwardVector는 길이가 1인 단위 벡터이므로 정규화 불필요
 	}
+
+	boxComp->OnComponentBeginOverlap.AddDynamic(this, &AEnemyActor::OnEnemyOverlap);
 }
 
 // Called every frame
@@ -51,3 +55,14 @@ void AEnemyActor::Tick(float DeltaTime)
 	SetActorLocation(GetActorLocation() + moveSpeed * dir * DeltaTime);
 }
 
+void AEnemyActor::OnEnemyOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	APlayerPawn* player = Cast<APlayerPawn>(OtherActor);
+
+	if (player != nullptr) {
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionFX, GetActorLocation(), GetActorRotation());
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionFX, OtherActor->GetActorLocation(), OtherActor->GetActorRotation());
+		OtherActor->Destroy();
+	}
+	Destroy();
+}

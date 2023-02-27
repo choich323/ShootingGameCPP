@@ -24,6 +24,20 @@ APlayerPawn::APlayerPawn()
 
 	firePosition = CreateDefaultSubobject<UArrowComponent>(TEXT("Fire Position"));
 	firePosition->SetupAttachment(boxComp);
+
+	boxComp->SetGenerateOverlapEvents(true);
+	// 충돌 응답 처리 설정
+	boxComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	// 프로젝트 세팅의 콜리전: 1번 채널(Player)로 설정
+	boxComp->SetCollisionObjectType(ECC_GameTraceChannel1);
+
+	// 모든 채널에 대한 응답을 무시로 설정
+	boxComp->SetCollisionResponseToAllChannels(ECR_Ignore);
+	// enemy 채널에 대해 겹침 설정
+	boxComp->SetCollisionResponseToChannel(ECC_GameTraceChannel2, ECR_Overlap);
+	// 이미 이 클래스 기반의 블루프린트가 있을 때 생성자의 내용을 수정하면 반영되지 않는 경우가 있음
+	// 따라서 일반적으로는 생성자의 내용을 모두 작성한 후에 블루프린트를 생성한다.
+	boxComp->SetCollisionResponseToChannel(ECC_WorldStatic, ECR_Block);
 }
 
 // Called when the game starts or when spawned
@@ -44,7 +58,9 @@ void APlayerPawn::Tick(float DeltaTime)
 	// 이동할 위치 좌표: p = p0 + vt ; (속도)v = 벡터 * 속력
 	FVector newLocation = GetActorLocation() + dir * moveSpeed * DeltaTime;
 
-	SetActorLocation(newLocation);
+	// 뒤의 true는 위치를 조정할 때 중간에 충돌이 발생하는지 확인하는 것. 특별한 지정이 없으면 false가 기본값
+	// true를 통해 검사하는 것으로 매 프레임마다 CPU 연산이 추가되므로 효율은 감소한다. 꼭 필요한 것이 아니라면 최소화해야할 부분.
+	SetActorLocation(newLocation, true); 
 }
 
 // Called to bind functionality to input

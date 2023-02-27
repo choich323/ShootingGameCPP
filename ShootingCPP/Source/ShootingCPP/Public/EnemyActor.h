@@ -36,6 +36,12 @@ public:
 	UPROPERTY(EditAnywhere)
 	float moveSpeed = 800;
 
+	UPROPERTY(EditAnywhere)
+	class UParticleSystem* explosionFX;
+
+	UFUNCTION()
+	void OnEnemyOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 private:
 	// 오브젝트의 이동 방향
 	FVector dir;
