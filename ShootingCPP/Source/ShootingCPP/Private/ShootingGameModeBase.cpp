@@ -5,11 +5,30 @@
 #include "Blueprint/UserWidget.h"
 #include "MainWidget.h"
 #include "Components/TextBlock.h" // 이 헤더가 없으면 불완전한 클래스 형식으로 인식해서 에러 발생. 비슷한 상황이 날 경우 적절한 헤더를 찾아서 추가해줘야 한다.
+#include "MenuWidget.h"
+#include "Kismet/GameplayStatics.h"
 void AShootingGameModeBase::AddScore(int32 point)
 {
 	currentScore += point;
 	
 	PrintScore();
+}
+
+void AShootingGameModeBase::ShowMenu()
+{
+	if (menuWidget != nullptr) {
+		menuUI = CreateWidget<UMenuWidget>(GetWorld(), menuWidget);
+		if (menuUI != nullptr) {
+			// 메뉴 활성화
+			menuUI->AddToViewport();
+
+			// 게임 일시 정지
+			UGameplayStatics::SetGamePaused(GetWorld(), true);
+
+			// 마우스 커서 on
+			GetWorld()->GetFirstPlayerController()->SetShowMouseCursor(true);
+		}
+	}
 }
 
 void AShootingGameModeBase::BeginPlay()

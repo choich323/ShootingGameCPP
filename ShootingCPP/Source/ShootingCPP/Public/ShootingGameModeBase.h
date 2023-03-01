@@ -19,7 +19,13 @@ public:
 	
 	// 위젯 블루프린트 파일
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<class UMainWidget> mainWidget; 
+	TSubclassOf<class UMainWidget> mainWidget;
+
+	// 메뉴 블루프린트 파일
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UMenuWidget> menuWidget;
+
+	void ShowMenu();
 
 protected:
 	virtual void BeginPlay() override;
@@ -28,6 +34,8 @@ private:
 	int32 currentScore = 0;
 	// 실제로 표기되는 UI
 	class UMainWidget* mainUI;
+	// menu UI
+	class UMenuWidget* menuUI;
 
 	void PrintScore();
 };

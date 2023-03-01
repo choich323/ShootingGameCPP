@@ -7,6 +7,7 @@
 #include "EngineUtils.h"
 #include "PlayerPawn.h"
 #include "Kismet/GameplayStatics.h"
+#include "ShootingGameModeBase.h"
 // Sets default values
 AEnemyActor::AEnemyActor()
 {
@@ -63,6 +64,12 @@ void AEnemyActor::OnEnemyOverlap(UPrimitiveComponent* OverlappedComponent, AActo
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionFX, GetActorLocation(), GetActorRotation());
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionFX, OtherActor->GetActorLocation(), OtherActor->GetActorRotation());
 		OtherActor->Destroy();
+		
+		AShootingGameModeBase* currentGameMode = Cast<AShootingGameModeBase>(GetWorld()->GetAuthGameMode());
+
+		if (currentGameMode != nullptr) {
+			currentGameMode->ShowMenu();
+		}
 	}
 	Destroy();
 }
