@@ -7,6 +7,7 @@
 #include "Components/ArrowComponent.h"
 #include "EnemyActor.h"
 #include "Kismet/GameplayStatics.h"
+#include "ShootingGameModeBase.h"
 // Sets default values
 ABullet::ABullet()
 {
@@ -54,6 +55,16 @@ void ABullet::OnBulletOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 		OtherActor->Destroy();
 		// 생성할 월드, 파티클 파일, 생성 위치, 생성할 회전 값
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionFX, GetActorLocation(), GetActorRotation());
+		// 현재 게임 모드 호출
+		AGameModeBase* currentMode = GetWorld()->GetAuthGameMode();
+		// shooting game mode base로 변환
+		// 단순히 이 게임이 shooting 게임에만 한정되면 상관 없겠지만, 확장의 가능성을 고려해서 코드를 짜야한다.
+		// 다른 게임 모드가 있을 경우, 혹은 나중에 게임 모드를 추가할 수 있기 때문에 코드를 갈아 엎지 않도록 이렇게 작성하는 것.
+		AShootingGameModeBase* currentGameModeBase = Cast<AShootingGameModeBase>(currentMode);
+
+		if (currentGameModeBase != nullptr) { // cast 실패시 nullptr이므로
+			currentGameModeBase->AddScore(1);
+		}
 	}
 
 	// 그 이후 자기 자신(총알)도 제거

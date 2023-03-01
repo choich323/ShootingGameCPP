@@ -9,9 +9,11 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeShootingGameModeBase() {}
 // Cross Module References
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	SHOOTINGCPP_API UClass* Z_Construct_UClass_AShootingGameModeBase();
 	SHOOTINGCPP_API UClass* Z_Construct_UClass_AShootingGameModeBase_NoRegister();
+	SHOOTINGCPP_API UClass* Z_Construct_UClass_UMainWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_ShootingCPP();
 // End Cross Module References
 	void AShootingGameModeBase::StaticRegisterNativesAShootingGameModeBase()
@@ -28,6 +30,11 @@ void EmptyLinkFunctionForGeneratedCodeShootingGameModeBase() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_mainWidget_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_mainWidget;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +51,18 @@ void EmptyLinkFunctionForGeneratedCodeShootingGameModeBase() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AShootingGameModeBase_Statics::NewProp_mainWidget_MetaData[] = {
+		{ "Category", "ShootingGameModeBase" },
+		{ "Comment", "// \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc6\xae \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\n" },
+		{ "ModuleRelativePath", "Public/ShootingGameModeBase.h" },
+		{ "ToolTip", "\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc6\xae \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AShootingGameModeBase_Statics::NewProp_mainWidget = { "mainWidget", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AShootingGameModeBase, mainWidget), Z_Construct_UClass_UClass, Z_Construct_UClass_UMainWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AShootingGameModeBase_Statics::NewProp_mainWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AShootingGameModeBase_Statics::NewProp_mainWidget_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShootingGameModeBase_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingGameModeBase_Statics::NewProp_mainWidget,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AShootingGameModeBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AShootingGameModeBase>::IsAbstract,
 	};
@@ -53,11 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeShootingGameModeBase() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AShootingGameModeBase_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AShootingGameModeBase_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_AShootingGameModeBase_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AShootingGameModeBase_Statics::Class_MetaDataParams))
@@ -81,9 +100,9 @@ void EmptyLinkFunctionForGeneratedCodeShootingGameModeBase() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_ShootingGameModeBase_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AShootingGameModeBase, AShootingGameModeBase::StaticClass, TEXT("AShootingGameModeBase"), &Z_Registration_Info_UClass_AShootingGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShootingGameModeBase), 4122404546U) },
+		{ Z_Construct_UClass_AShootingGameModeBase, AShootingGameModeBase::StaticClass, TEXT("AShootingGameModeBase"), &Z_Registration_Info_UClass_AShootingGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShootingGameModeBase), 1927744225U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_ShootingGameModeBase_h_661339229(TEXT("/Script/ShootingCPP"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_ShootingGameModeBase_h_3505127257(TEXT("/Script/ShootingCPP"),
 		Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_ShootingGameModeBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_ShootingGameModeBase_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
