@@ -8,6 +8,7 @@
 #include "PlayerPawn.h"
 #include "Kismet/GameplayStatics.h"
 #include "ShootingGameModeBase.h"
+#include "Kismet/KismetMathLibrary.h"
 // Sets default values
 AEnemyActor::AEnemyActor()
 {
@@ -38,6 +39,8 @@ void AEnemyActor::BeginPlay()
 			if (player->GetName().Contains(TEXT("BP_PlayerPawn"))) {
 				dir = player->GetActorLocation() - GetActorLocation(); // 플레이어의 위치 - 적의 위치
 				dir.Normalize(); // 정규화
+
+				SetActorRotation(UKismetMathLibrary::MakeRotFromXZ(dir, GetActorUpVector()));
 			}
 		}
 	}

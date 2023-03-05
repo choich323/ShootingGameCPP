@@ -37,6 +37,14 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_scoreData_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_scoreData;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bestScoreText_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_bestScoreText;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bestScoreData_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_bestScoreData;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -72,9 +80,29 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainWidget_Statics::NewProp_scoreData = { "scoreData", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UMainWidget, scoreData), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainWidget_Statics::NewProp_scoreData_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainWidget_Statics::NewProp_scoreData_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreText_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "MainWidget" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/MainWidget.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreText = { "bestScoreText", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UMainWidget, bestScoreText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreText_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreText_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreData_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "MainWidget" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/MainWidget.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreData = { "bestScoreData", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UMainWidget, bestScoreData), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreData_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreData_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMainWidget_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_scoreText,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_scoreData,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreText,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainWidget_Statics::NewProp_bestScoreData,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMainWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMainWidget>::IsAbstract,
@@ -113,9 +141,9 @@ void EmptyLinkFunctionForGeneratedCodeMainWidget() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_MainWidget_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UMainWidget, UMainWidget::StaticClass, TEXT("UMainWidget"), &Z_Registration_Info_UClass_UMainWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMainWidget), 357868415U) },
+		{ Z_Construct_UClass_UMainWidget, UMainWidget::StaticClass, TEXT("UMainWidget"), &Z_Registration_Info_UClass_UMainWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMainWidget), 2152987929U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_MainWidget_h_598713178(TEXT("/Script/ShootingCPP"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_MainWidget_h_1949252115(TEXT("/Script/ShootingCPP"),
 		Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_MainWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Programming_Practice_Unreal5_ShootingGame_ShootingGameCPP_ShootingCPP_Source_ShootingCPP_Public_MainWidget_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

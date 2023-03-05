@@ -32,6 +32,9 @@ protected:
 
 private:
 	int32 currentScore = 0;
+
+	int32 bestScore = 0;
+
 	// 실제로 표기되는 UI
 	class UMainWidget* mainUI;
 	// menu UI

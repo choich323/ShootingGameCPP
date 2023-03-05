@@ -10,7 +10,9 @@
 void AShootingGameModeBase::AddScore(int32 point)
 {
 	currentScore += point;
-	
+	if (currentScore > bestScore) {
+		bestScore = currentScore;
+	}
 	PrintScore();
 }
 
@@ -42,11 +44,13 @@ void AShootingGameModeBase::BeginPlay()
 			mainUI->AddToViewport();
 		}
 	}
+	PrintScore();
 }
 
 void AShootingGameModeBase::PrintScore()
 {
 	if (mainUI != nullptr) {
 		mainUI->scoreData->SetText(FText::AsNumber(currentScore));
+		mainUI->bestScoreData->SetText(FText::AsNumber(bestScore));
 	}
 }
