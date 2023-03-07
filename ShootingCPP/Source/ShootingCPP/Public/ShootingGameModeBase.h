@@ -27,18 +27,23 @@ public:
 
 	void ShowMenu();
 
+	void PrintScore();
+
+	void SaveScoreData();
+
+	void LoadScoreData();
+
+	int32 bestScore;
+	int32 preBestScore;
+
 protected:
 	virtual void BeginPlay() override;
 
 private:
-	int32 currentScore = 0;
-
-	int32 bestScore = 0;
+	int32 currentScore;
 
 	// 실제로 표기되는 UI
 	class UMainWidget* mainUI;
 	// menu UI
 	class UMenuWidget* menuUI;
-
-	void PrintScore();
 };

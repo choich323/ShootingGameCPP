@@ -33,7 +33,11 @@
             "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingcpp\\uht\\shootinggamemodebase.generated.h",
             "e:\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
             "e:\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
-            "e:\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl"
+            "e:\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl",
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\source\\shootingcpp\\public\\savedata.h",
+            "e:\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\savegame.h",
+            "e:\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\savegame.generated.h",
+            "e:\\programming_practice\\unreal5\\shootinggame\\shootinggamecpp\\shootingcpp\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingcpp\\uht\\savedata.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

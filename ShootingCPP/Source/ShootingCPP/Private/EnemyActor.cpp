@@ -9,6 +9,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "ShootingGameModeBase.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "SaveData.h"
 // Sets default values
 AEnemyActor::AEnemyActor()
 {
@@ -71,6 +72,7 @@ void AEnemyActor::OnEnemyOverlap(UPrimitiveComponent* OverlappedComponent, AActo
 		AShootingGameModeBase* currentGameMode = Cast<AShootingGameModeBase>(GetWorld()->GetAuthGameMode());
 
 		if (currentGameMode != nullptr) {
+			currentGameMode->SaveScoreData();
 			currentGameMode->ShowMenu();
 		}
 	}
